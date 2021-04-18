@@ -10,3 +10,8 @@ DQN:
 https://github.com/LayneIns/Deep-Q-Learning-for-Gomoku
 
 https://github.com/slcz/gomoku-deep-learning
+
+Minimax:
+https://github.com/dgarzon/gomoku
+
+https://github.com/zuoyigehaobing/Gomoku-GameTreeSearch
