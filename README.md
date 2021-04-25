@@ -9,6 +9,6 @@ https://github.com/selveszero/Deep-Q-Learning-for-Gomoku.git
 https://github.com/slcz/gomoku-deep-learning
 
 Minimax:
-https://github.com/dgarzon/gomoku
+https://github.com/selveszero/gomoku.git
 
 https://github.com/zuoyigehaobing/Gomoku-GameTreeSearch
