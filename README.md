@@ -1,5 +1,7 @@
 # GomoBot
 
+Some changed to forked versions with minor fixes
+
 Alpha0:
 https://github.com/junxiaosong/AlphaZero_Gomoku
 
