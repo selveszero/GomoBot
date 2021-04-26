@@ -14,3 +14,5 @@ Minimax:
 https://github.com/selveszero/gomoku.git
 
 https://github.com/zuoyigehaobing/Gomoku-GameTreeSearch
+
+https://github.com/adikhanna/gomuku-AI
