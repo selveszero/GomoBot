@@ -1,17 +1,18 @@
 # GomoBot
 
-DQN:
-https://github.com/slcz/gomoku-deep-learning
+Some changed to forked versions with minor fixes
 
 Alpha0:
 https://github.com/junxiaosong/AlphaZero_Gomoku
 
 DQN:
-https://github.com/LayneIns/Deep-Q-Learning-for-Gomoku
+https://github.com/selveszero/Deep-Q-Learning-for-Gomoku.git
 
 https://github.com/slcz/gomoku-deep-learning
 
 Minimax:
-https://github.com/dgarzon/gomoku
+https://github.com/selveszero/gomoku.git
 
 https://github.com/zuoyigehaobing/Gomoku-GameTreeSearch
+
+https://github.com/adikhanna/gomuku-AI
