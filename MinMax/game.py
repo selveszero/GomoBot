@@ -74,6 +74,23 @@ class Board(object):
             square_state[3][:, :] = 1.0  # indicate the colour to play
         return square_state[:, ::-1, :]
 
+    def current_configuration_minmax(self):
+        """
+        return the numpy array of postion of boards which is suitabe for minimax
+        plus return all valid positions avaliable plus return the id of the
+        current player
+        """
+        square_state = np.zeros((self.width, self.height))
+        if self.states:
+            moves, players = np.array(list(zip(*self.states.items())))
+            move_curr = moves[players == self.current_player]
+            move_oppo = moves[players != self.current_player]
+            square_state[(move_curr // self.width),
+                          move_curr % self.height] = self.current_player
+            square_state[(move_oppo // self.width),
+                          move_oppo % self.height] = 3 - self.current_player
+        return square_state, self.availables, self.current_player
+
     def do_move(self, move):
         self.states[move] = self.current_player
         self.availables.remove(move)
