@@ -16,3 +16,6 @@ https://github.com/selveszero/gomoku.git
 https://github.com/zuoyigehaobing/Gomoku-GameTreeSearch
 
 https://github.com/adikhanna/gomuku-AI
+
+
+https://colab.research.google.com/drive/1NgSE0KP-L7f7j9UB8_LVRyqJTfGMleLj?usp=sharing
