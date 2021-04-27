@@ -120,7 +120,6 @@ class Minimax(object):
         #     for i in range(self.height - self.seq_len + 1):
         #         if ((len(set(state_array[(i:(i+self.seq_len)), c])) == 1) and (state_array[r,i] != 0)):
         #             return True
-        # # Check Diagonally
 
     def evaluate(self, state_array, current_player):
         return 1
