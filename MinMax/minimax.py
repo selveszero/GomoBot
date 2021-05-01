@@ -54,11 +54,11 @@ class Minimax(object):
             new_squared_state[r,c] = current_player
             new_availables.remove(place)
             score = self.MinValue(new_squared_state, new_availables, depth + 1, 3 - current_player) # current_player has a valid value of either 1 or 2
-            print("Min Value at location ", self.move_to_location(place), " is ", score)
+            # print("Min Value at location ", self.move_to_location(place), " is ", score)
             if score[0] > maxEval:
                 maxEval = score[0]
                 best_action = place
-        print("My maxEval is ", maxEval, " and place is ", best_action, " and availables is ", availables)
+        # print("My maxEval is ", maxEval, " and place is ", best_action, " and availables is ", availables)
         return [maxEval, best_action]
 
     def MinValue(self, square_state, availables, depth: int, current_player: int):
