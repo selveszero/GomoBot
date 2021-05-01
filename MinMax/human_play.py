@@ -16,6 +16,7 @@ from policy_value_net_numpy import PolicyValueNetNumpy
 # from policy_value_net_pytorch import PolicyValueNet  # Pytorch
 # from policy_value_net_tensorflow import PolicyValueNet # Tensorflow
 # from policy_value_net_keras import PolicyValueNet  # Keras
+from minimax import Minimax
 
 
 class Human(object):
@@ -61,15 +62,16 @@ def run():
         # mcts_player = MCTSPlayer(best_policy.policy_value_fn, c_puct=5, n_playout=400)
 
         # load the provided model (trained in Theano/Lasagne) into a MCTS player written in pure numpy
-        try:
-            policy_param = pickle.load(open(model_file, 'rb'))
-        except:
-            policy_param = pickle.load(open(model_file, 'rb'),
-                                       encoding='bytes')  # To support python3
-        best_policy = PolicyValueNetNumpy(width, height, policy_param)
-        mcts_player = MCTSPlayer(best_policy.policy_value_fn,
-                                 c_puct=5,
-                                 n_playout=400)  # set larger n_playout for better performance
+        # try:
+        #     policy_param = pickle.load(open(model_file, 'rb'))
+        # except:
+        #     policy_param = pickle.load(open(model_file, 'rb'),
+        #                                encoding='bytes')  # To support python3
+        # best_policy = PolicyValueNetNumpy(width, height, policy_param)
+        # mcts_player = MCTSPlayer(best_policy.policy_value_fn,
+        #                          c_puct=5,
+        #                          n_playout=400)  # set larger n_playout for better performance
+        mcts_player = Minimax()
 
         # uncomment the following line to play with pure MCTS (it's much weaker even with a larger n_playout)
         # mcts_player = MCTS_Pure(c_puct=5, n_playout=1000)
