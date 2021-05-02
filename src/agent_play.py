@@ -96,7 +96,7 @@ def run(width, agent1, agent2, file1, file2, start, rounds):
         
         winrate1 = winners.count(1) / rounds
         winrate2 = winners.count(2) / rounds
-
+        print('Winners: ' + ','.join([str(w) for w in winners]))
         print(str(agent1) + ' 1' + ' win rate: ' + str(winrate1))
         print(str(agent2) + ' 2' + ' win rate: ' + str(winrate2))
 
