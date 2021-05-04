@@ -5,7 +5,7 @@ To play human. vs agent or agent vs. agent gomoku games, run RunGomoBot.ipynb an
 
 
 
-References:
+## References:
 
 https://github.com/adikhanna/gomuku-AI
 
