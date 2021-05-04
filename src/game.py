@@ -5,6 +5,7 @@
 
 from __future__ import print_function
 import numpy as np
+import random
 
 
 class Board(object):
@@ -90,7 +91,7 @@ class Board(object):
             square_state[(move_oppo // self.width),
                           move_oppo % self.height] = 3 - self.current_player
         return square_state, self.availables, self.current_player
-    
+
     def current_dqn_config(self):
         """return the board state and availability for dqn model.
         state shape: width*width*2
@@ -209,13 +210,18 @@ class Game(object):
         p1, p2 = self.board.players
         player1.set_player_ind(p1)
         player2.set_player_ind(p2)
+        move_num = 0
         players = {p1: player1, p2: player2}
         if is_shown:
             self.graphic(self.board, player1.player, player2.player)
         while True:
             current_player = self.board.get_current_player()
             player_in_turn = players[current_player]
-            move = player_in_turn.get_action(self.board)
+            if (move_num < 2):
+                move = random.choice(self.board.availables)
+                move_num += 1
+            else:
+                move = player_in_turn.get_action(self.board)
             self.board.do_move(move)
             if is_shown:
                 self.graphic(self.board, player1.player, player2.player)
