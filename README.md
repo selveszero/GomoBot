@@ -9,7 +9,7 @@ To play human. vs agent or agent vs. agent gomoku games, run RunGomoBot.ipynb an
 https://vimeo.com/544829050
 
 ## Descriptions:
-See report.pdf for project descriptions.
+See report.pdf for detailed project descriptions.
 
 ## References:
 
